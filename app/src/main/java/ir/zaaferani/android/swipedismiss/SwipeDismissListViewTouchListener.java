@@ -14,12 +14,14 @@
  * limitations under the License.
  */
 
-package com.example.android.swipedismiss;
+package ir.zaaferani.android.swipedismiss;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
+import android.annotation.TargetApi;
 import android.graphics.Rect;
+import android.os.Build;
 import android.os.SystemClock;
 import android.view.MotionEvent;
 import android.view.VelocityTracker;
@@ -167,6 +169,7 @@ public class SwipeDismissListViewTouchListener implements View.OnTouchListener {
         };
     }
 
+    @TargetApi(Build.VERSION_CODES.HONEYCOMB_MR1)
     @Override
     public boolean onTouch(View view, MotionEvent motionEvent) {
         if (mViewWidth < 2) {
@@ -340,6 +343,7 @@ public class SwipeDismissListViewTouchListener implements View.OnTouchListener {
         }
     }
 
+    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     private void performDismiss(final View dismissView, final int dismissPosition) {
         // Animate the dismissed list item to zero-height and fire the dismiss callback when
         // all dismissed list item animations have completed. This triggers layout on each animation

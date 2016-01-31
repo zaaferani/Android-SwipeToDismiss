@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.swipedismiss;
+package ir.zaaferani.android.swipedismiss;
 
 import android.app.ListActivity;
 import android.os.Bundle;

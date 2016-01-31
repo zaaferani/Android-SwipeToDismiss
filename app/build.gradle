@@ -5,8 +5,8 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "com.example.android.swipedismiss"
-        minSdkVersion 14
+        applicationId "ir.zaaferani.android.swipedismiss"
+        minSdkVersion 8
         targetSdkVersion 23
     }
 
